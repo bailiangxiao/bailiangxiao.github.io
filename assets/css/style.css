@@ -1,0 +1,369 @@
+/* 导航栏相关 */
+/* 修改导航栏的高度和边距 */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80px;
+  /* margin-bottom: 50px; */
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+.navbar-collapse {
+  background-color: #f8f9fa;
+  opacity: 1;
+  position: relative;
+  z-index: 9999;
+  order:1;
+  width: 100%;
+  max-width: 100%;
+  right: 0;
+}
+
+/* 对于宽度大于或等于 994px 的设备应用以下 CSS 样式 */
+@media (min-width: 994px) {
+  .navbar-collapse {
+    position: absolute;
+    width: 50%;
+  }
+}
+
+/* 对于宽度小于 994px 的设备应用以下 CSS 样式 */
+@media (max-width: 993px) {
+  .navbar-collapse {
+    position: relative;
+    width: 100%;
+  }
+}
+
+/* 修改 LOGO 图片的大小 */
+.navbar-brand img {
+  height: 60px;
+}
+.navbar-brand strong{
+  /* font-size: 27px; */
+}
+
+/* 修改导航栏链接的颜色 */
+.navbar-nav .nav-link {
+  color: #333;
+}
+
+.navbar-nav {
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* 鼠标悬停时修改链接的颜色 */
+.navbar-nav .nav-link:hover {
+color: #ebebeb;
+background-color: #333;
+}
+
+
+/* 修改按钮的边距 */
+.navbar-toggler {
+margin-right: 0;
+width: 100px;
+}
+
+/* 自定义导航栏的颜色 */
+.navbar-custom {
+  background-color: #ebebeb;
+  color: #ebebeb;
+}
+
+.container-fluid .row {
+  margin: 0 0 30px 0;
+}
+
+/* 导航栏结束 */
+/* 轮播图相关 */
+@media (max-width: 767px) { 
+.carousel-jpgword {
+  right: 16.03px;
+  bottom: 64.14px;
+  position: absolute;
+  height: 69.49px;
+  width: 160.37px;
+  background-color:#931c1d;
+  color: #fff;
+  font-size: 20px;
+  z-index: 9990;
+  opacity: 0.9;
+}
+.carousel-jpgword .carousel-word {
+  top: 5.34px;
+  left: 10.69px;
+  position :absolute;
+  font-size: 21.38px;
+}
+.carousel-jpgword .carousel-link {
+  top: 37.42px;
+  left: 10.69px;
+  position: absolute;
+  color:#ebebeb;
+  font-size: 10.68px;
+}
+
+}
+
+@media (min-width: 768px) { 
+  .carousel-jpgword {
+    right: 21.672px;
+    bottom: 86.688px;
+    position: absolute;
+    height: 93.912px;
+    width: 216.72px;
+    background-color:#931c1d;
+    color: #fff;
+    font-size: 20px;
+    z-index: 9990;
+    opacity: 0.9;
+  }
+  .carousel-jpgword .carousel-word {
+    top: 7.24px;
+    left: 14.448px;
+    position :absolute;
+    font-size: 28.896px;
+  }
+  .carousel-jpgword .carousel-link {
+    top: 50.568px;
+    left: 14.44px;
+    position: absolute;
+    color:#ebebeb;
+    font-size: 14.44px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-jpgword {
+    right: 25.8px;
+    bottom: 103.2px;
+    position: absolute;
+    height: 118px;
+    width: 258px;
+    background-color:#931c1d;
+    color: #fff;
+    font-size: 20px;
+    z-index: 9990;
+    opacity: 0.9;
+  }
+  .carousel-jpgword .carousel-word {
+    top: 8.6px;
+    left: 17.2px;
+    position :absolute;
+    font-size: 34.4px;
+  }
+  .carousel-jpgword .carousel-link {
+    top: 60.2px;
+    left: 17.2px;
+    position: absolute;
+    color:#ebebeb;
+    font-size: 17.2px;
+  }
+}
+@media (min-width: 1200px) { 
+.carousel-jpgword {
+  right: 30px;
+  bottom: 120px;
+  position: absolute;
+  height: 130px;
+  width: 300px;
+  background-color:#931c1d;
+  color: #fff;
+  z-index: 9990;
+  opacity: 0.9  ;
+}
+.carousel-jpgword .carousel-word {
+  top: 10px;
+  left: 20px;
+  position :absolute;
+  font-size: 40px;
+}
+.carousel-jpgword .carousel-link {
+  top: 70px;
+  left: 20px;
+  position: absolute;
+  color:#ebebeb;
+  font-size: 20px;
+}
+/*轮播图尺寸结束*/
+}
+  .carousel-item .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    position: relative;
+  }
+  
+  .carousel-item .img-container img {
+    height: auto;
+    max-height: 85%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-item .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+  }
+  .carousel-item {
+    position: relative;
+  }
+  .carousel-inner .item img {
+    cursor: pointer;
+ }
+ /* 调节左右箭头的位置  */
+  .carousel-control-next {
+    right: 0;
+    transform: translateX(+50%);
+  }
+  .carousel-control-prev {
+    left: 0;
+    transform: translateX(-50%);
+  }
+/* 轮播图结束 */
+/* 进度条相关 */
+ .progress-container {
+	width: 100%;
+	height: 5px;
+	background: #ccc;
+  position: sticky;
+  top: 80px;
+  z-index: 99;
+  
+}
+.progress-bar {
+	height: 5px;
+	width: 0%;
+	background-image: linear-gradient(to top, #8f0014, #ff5721);
+  z-index: 10000;
+}
+.container {
+  padding: 1.5rem;
+}
+.name-eg {
+  font-size: 1.2rem;
+}
+.footer-info {
+padding: 12px 0 !important;
+display: flex;
+justify-content: center;
+padding-top: 12px;
+}
+.copyright-info {
+  text-align: center;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+/* 其他*/
+
+.background {
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; 
+  position: relative;
+  margin-top: 6px;
+}
+
+.background:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  text-align: center;
+  top: 25%;
+  color: black;
+}
+
+
+
+
+
+/* 自定义背景颜色 */
+body {background-color:#ebebeb;}
+
+#outerdiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#innerdiv {
+  position: absolute;
+}
+
+#bigimg {
+  border: 5px solid #fff;
+}
+/*缩进2个字*/
+.p-indent2{
+  text-indent:2em;
+}
+/*向右对齐*/
+.p-right{
+  text-align: right;
+}
+.p-right2{
+  font-size: 0.7em;
+  text-align: right;
+}
+.ffm{
+  font-size: 4rem;
+}
+/* 自定义标题 title_font_size */
+.tfs{
+   font-size: calc(2rem + 1vw);
+   
+}
+/* 主页格言*/
+.indexword {
+  font-size: 1.6em;
+  color: #8f0014;
+}
+/*  故事格言*/
+.storyword {
+  font-size: 2em;
+  color: #8f0014;
+}
+.font-red-color {
+  color: #8f0014;
+}
